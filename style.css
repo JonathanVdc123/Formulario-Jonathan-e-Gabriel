@@ -35,38 +35,102 @@ nav a {
     text-decoration: none;
 }
 
+
+/* Ajuste nos labels e inputs do formulário */
+
+form label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+    color: rgb(29, 80, 59);
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="date"] {
+    background-color: rgb(240, 252, 245);
+    padding: 6px;
+    border: 2px solid rgb(112, 241, 138);
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    width: 100%;
+    max-width: 500px;
+    height: 38px;
+    transition: 0.25s;
+    display: block;
+}
+
+input:hover,
+input:focus {
+    border: 2px solid rgb(38, 137, 95);
+    outline: none;
+}
+
+
+/* Estilização para seleção de cursos */
+
+fieldset {
+    border: 2px solid rgb(112, 241, 138);
+    border-radius: 5px;
+    padding: 15px;
+    margin: 15px 0;
+    background-color: rgb(240, 252, 245);
+}
+
+legend {
+    font-weight: bold;
+    color: rgb(38, 137, 95);
+    padding: 0 8px;
+}
+
+fieldset label {
+    display: inline-block;
+    font-weight: normal;
+    margin-top: 5px;
+    cursor: pointer;
+    color: black;
+}
+
+input[type="radio"] {
+    margin-right: 8px;
+    cursor: pointer;
+    accent-color: rgb(38, 137, 95);
+}
+
+
+/* Declaração oficial com tom de verde */
+
+.declaracao {
+    font-size: 0.9em;
+    background-color: rgb(220, 247, 230);
+    border-left: 4px solid rgb(38, 137, 95);
+    padding: 10px;
+    margin: 15px 0;
+    line-height: 1.4;
+    color: rgb(20, 60, 40);
+}
+
 button {
     cursor: pointer;
     background-color: rgb(38, 137, 95);
     border-radius: 5px;
-    border: 2px solid rgb(63, 101, 46);
+    border: 2px solid rgb(29, 80, 59);
     color: white;
-    padding: 3px;
-    font-family: 'Times New Roman', Times, serif;
-    height: 30px;
-    width: 65px;
+    padding: 5px 15px;
+    font-family: inherit;
+    font-weight: bold;
+    height: auto;
+    width: auto;
+    margin-top: 15px;
 }
 
 button:hover {
     background-color: rgb(112, 241, 138);
-    border-color: rgb(150, 244, 139);
+    border-color: rgb(58, 204, 141);
+    color: rgb(29, 80, 59);
     transition: 0.25s;
-}
-
-input {
-    background-color: rgb(255, 250, 243);
-    padding: 4px;
-    border: 2px solid rgb(112, 241, 138);
-    border-radius: 5px;
-    margin-top: 7px;
-    margin-bottom: 7px;
-    width: 300px;
-    height: 30px;
-    transition: 0.25s;
-}
-
-input:hover {
-    border: 2px solid rgb(13, 132, 55);
 }
 
 hr {
@@ -83,15 +147,15 @@ header h1 {
 
 h5 {
     margin-top: 7px;
-    color: rgb(197, 166, 9);
+    color: rgb(38, 137, 95);
 }
 
 ul.lista li {
     list-style-type: none;
     padding: 12px 15px;
     margin-bottom: 10px;
-    background-color: rgb(255, 250, 243);
-    border-left: 4px solid rgb(145, 96, 49);
+    background-color: rgb(240, 252, 245);
+    border-left: 4px solid rgb(38, 137, 95);
     border-radius: 0 6px 6px 0;
 }
 
@@ -109,12 +173,14 @@ ul.lista li {
 
 .btnnav:hover {
     background-color: rgb(112, 241, 138);
-    color: rgb(96, 96, 96);
+    color: rgb(29, 80, 59);
 }
 
 .secoes {
     margin: 33px;
     color: black;
+    width: 100%;
+    max-width: 700px;
 }
 
 .tituloinformacao {
@@ -123,17 +189,17 @@ ul.lista li {
 }
 
 .blocos {
-    border-color: 4px solid rgb(150, 80, 50);
-    background-color: bisque;
+    border: 4px solid rgb(38, 137, 95);
+    background-color: rgb(240, 252, 245);
     margin: 20px;
     font-size: 20px;
 }
 
 .article-cardapio {
-    background-color: rgb(255, 247, 236);
+    background-color: rgb(240, 252, 245);
     border-radius: 10px;
-    border: 2px solid rgb(197, 166, 9);
-    padding: 15px;
+    border: 2px solid rgb(38, 137, 95);
+    padding: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
 }
